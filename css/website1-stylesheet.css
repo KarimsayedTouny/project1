@@ -1,0 +1,503 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    height: 900px;
+    
+}
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.703);
+    overflow: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 5;
+}
+.logo {
+    height: 55px;
+    width: 55px;
+    float: left;
+    margin-left: 200px;
+}
+.nav {
+    list-style: none;
+    float: left;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+.nav li {
+    display: inline;
+    margin-left: 25px;
+}
+.nav li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav li a:hover {
+    color: yellow;
+}
+.search {
+    height: 25px;
+    width: 200px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: white;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding-top: 0px;
+}
+.search .sh {
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    
+}
+.search .sh i {
+    position: absolute;
+    right: 50px;
+    position: absolute;
+}
+.home {
+    background-image: url(../website1-images/education-concept-books-laptop-library.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    position: relative;
+}
+.home-content {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    /* transform: translate(-50% -50%); */
+}
+.title1 , .title2 {
+    font-size: 65px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pg1 , .pg2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn1 {
+    height: 70px;
+    width: 188px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: yellow;
+    color: black;
+    transform: scale(1.1);
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\   common  \\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* 
+    -container
+    -sec header
+    -sec padding
+    -hover effect 1 (left to right)
+    -hover effect 2 (top to bottom)
+*/
+.section-header{
+    text-align: center;
+    font-size: 48px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.line-1{
+    margin: auto;
+    width: 130px;
+    height: 4px;
+    background-color: rgb(5, 87, 209);
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
+.pd-y {
+    padding: 50px 0;
+}
+/* /////////////////////////about sec////////////////// */
+.content-about {
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+}
+.card-about {
+    width: 30%;
+    float: left;
+    border: 0.5px solid rgb(196, 196, 196);
+    text-align: center;
+    height: 250px;
+    padding: 15px 3px;
+    position: relative;
+}
+.content-about .mg {
+    margin: 0px 4%;
+}
+.card-about i {
+    font-size: 42px;
+    color: #6195FF;
+    padding: 25px;
+}
+.card-about h2 {
+    font-size: 32px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.card-about p {
+    color: #8999;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.card-about a {
+    font-size: 18px;
+    color: #6195FF;
+}
+.card-about::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    transition: width 0.5s;
+    z-index: -1;
+}
+.card-about:hover::after {
+    width: 100%;
+    
+}
+.card-about:hover h2{
+    color: white;
+}
+/* ///////////////////////////////////////portfolio sec////////////////// */
+.portfolio-container{
+    background-color: rgba(219, 219, 218, 0.467);
+    overflow: auto;
+    height: 167vh;
+}
+.content-portfolio {
+    overflow: auto;
+    width: 70%;
+    margin: 0px 0px 5% 20%;
+}
+.card-portfolio {
+    width: 250px;
+    height: 370px;
+    float: left;
+    margin: 25px;
+    position: relative;
+}
+.card-portfolio .layer-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card-portfolio img {
+    width: 100%;
+}
+.hover-portfolio{
+    width: 280px;
+    background-color: rgba(0, 0, 0, 0.785);
+    height: 280px;
+    position: absolute;
+    margin: -15px;
+    float: left;
+    opacity:0;
+    transition: 1s;
+    color: white;
+    text-align: center;
+}
+.hover-portfolio:hover {
+    opacity: 1;
+}
+.hover-portfolio h3 {
+    margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.hover-portfolio i {
+    color: #6195FF;
+    margin: 25px 8px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.card-portfolio .layer-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+/* ///////////////////////////////////////services sec////////////////// */
+.card-services {
+    width: 30%;
+    float: left;
+    border: 0.5px solid rgb(196, 196, 196);
+    text-align: center;
+    text-transform: capitalize;
+    height: 100px;
+    padding: 15px 3px;
+    margin-bottom: 25px;
+    overflow: auto;
+    position: relative;
+}
+.card-services i {
+    font-size: 28px;
+    color: #6195FF;
+    padding: 2px;
+    float: left;
+}
+.card-services p {
+    color: #000000;
+}
+.card-services::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    transition: height 0.5s;
+    z-index: -1;
+}
+.card-services:hover::after {
+    height: 100%;
+}
+.card-services:hover h2, .card-services:hover p {
+    color: white;
+}
+/* -------------------------------------------------prices sec---------------------------------- */
+.prices-container{
+    background-color: rgba(219, 219, 218, 0.467);
+    overflow: auto;
+    padding: 100px 132px;
+    margin-bottom: 80px;
+}
+.price-content {
+    margin: 25px 25px;
+    float: left;
+}
+.price-content p{
+    color: rgb(158, 158, 158);
+}
+.price-content h2{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+.price-content .line-2{
+    /* margin: auto; */
+    width: 330px;
+    height: 4px;
+    background-color: rgb(5, 87, 209);
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
+.image-price {
+    float: right;
+    margin: 25px 0px;
+    /* width: 10%; */
+    
+}
+.image-price img{
+    width: 450px;
+    height: 450px;
+    border-radius: 25px;
+}
+.circ-info {
+    margin-left: 180px;
+    overflow: auto;
+    margin-top: 12px;
+    
+}
+.circ1 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid black;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.circ1:hover{
+    background-color: rgb(64, 98, 184);
+    border: 1px solid rgb(64, 98, 184);
+}
+/* -------------------------------------------------team sec---------------------------------- */
+.team-container {
+    background-image: url(../website1-images/background/background2.webp);
+    background-size: cover;
+    background-attachment:fixed;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.708);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.team-content   {
+    width: 70%;
+    margin: 9% ;
+    padding: 0 0 0 7%;
+    z-index: 5;
+}
+.team-card {
+    width: 25%;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.team-card i {
+    color: #6195FF;
+    font-size: 35px;
+}
+/* -------------------------------------------------blog sec---------------------------------- */
+.content-blog {
+    overflow: auto;
+    width: 95%;
+    margin: auto;
+    word-spacing: 2px;
+}
+.cont1 {
+    width: 25%;
+    height: 600px;
+    border: 2px solid #6195FF;
+    margin: 0px 1%;
+    padding: 35px;
+    border-radius: 15px;
+    float: left;
+}
+.t1 {
+    font-size: 20px; 
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.t2 {
+    font-size: 56px; 
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+}
+.sub {
+    color: #71717A;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.t3 {
+    color: #484646;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 0px;
+}
+hr {
+    border-radius: 20px;
+}
+.options {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 1px;
+    line-height: 40px;
+    padding: 40px 25px;
+}
+.btn-5 {
+    width: 292px;
+    height: 55px;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+    background-color: yellow;
+    padding: 16px;
+    border-radius: 5px;
+    border-color: #7F60F9;
+    margin: 50px 10% ;
+}
+.btn-5:hover {
+    background-color: #000000;
+    border: none;
+    color: white;
+}
+/* -------------------------------------------------footer sec---------------------------------- */
+.footer-container {
+    height: 300px;
+    background-color: #333;
+}
+.fg {
+    margin: 0 41%;
+    float: left;
+    border-radius: 5px;
+}
+.icon-group {
+    overflow: auto;
+    margin: 10% 40%;
+}
+.cercle{
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #6195FF;
+    margin: 0 0.5%;
+    cursor: pointer;
+}
+.cercle:hover{
+    opacity: .7;
+}
+.cercle i{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 30% 30%;
+}
+.fp{
+    float: left;
+    font-size: 15px;
+    margin: -100px 550px;
+    color: white;
+}
